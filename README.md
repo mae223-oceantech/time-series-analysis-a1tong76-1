@@ -29,6 +29,23 @@ A kernel is the Python engine that actually runs the code in your notebook. When
 
 ---
 
+### Step 0 — Create a GitHub account
+
+You need a free GitHub account to access this assignment.
+
+1. Go to [github.com](https://github.com) and click **Sign up**
+2. Enter your email, a password, and a username
+   - Your username will be visible to your instructor — keep it professional
+   - Using your UCSD email is recommended but not required
+3. Verify your email address when prompted
+4. Once your account is active, click the assignment link posted on Canvas
+5. Click **Accept this assignment** — GitHub Classroom will create a personal copy of this repository just for you
+6. Wait a few seconds, then refresh — you will see a link to your own repo
+
+> Your repo is an independent copy. Changes you make do not affect anyone else's, and no other student can see yours.
+
+---
+
 ### Step 1 — Install Miniconda
 
 Miniconda is a lightweight Python package manager. It lets you create isolated Python environments so that different projects do not interfere with each other. **Skip this step if you already have Anaconda or Miniconda installed.**
@@ -50,18 +67,18 @@ Miniconda is a lightweight Python package manager. It lets you create isolated P
 
 ---
 
-### Step 2 — Clone this repository
+### Step 2 — Clone your repository
 
-If you are viewing this on GitHub Classroom, click the green **Code** button and copy the repository URL. Then in Terminal (Mac) or Anaconda Prompt (Windows) run:
+On your GitHub Classroom repo page, click the green **Code** button and copy the URL. Then in Terminal (Mac) or Anaconda Prompt (Windows) run:
 
 ```bash
 git clone <your-repo-url>
 ```
 
-This will download all the files into a folder on your computer. Navigate into it:
+This downloads all the files to your computer and keeps them connected to your GitHub repo. Navigate into the folder:
 
 ```bash
-cd time-series-analysis
+cd time-series-analysis-<your-username>
 ```
 
 ---
@@ -97,9 +114,25 @@ The first command activates the environment. The second registers it as a kernel
 
 ### Step 5 — Open the notebook
 
-1. In VS Code, open the repo folder: **File → Open Folder**, navigate to the `time-series-analysis` folder, and click Open
+1. In VS Code, open the repo folder: **File → Open Folder**, navigate to your `time-series-analysis` folder, and click Open
 2. Click `Tidal Analysis_Python.ipynb` in the left file panel to open the notebook
 3. In the top-right corner click **Select Kernel → Select Another Kernel... → Jupyter Kernel... → mae223**
 4. Click **Run All** in the toolbar to execute all cells — plots and output will appear below each cell
 
 > **Note:** Always run cells from top to bottom. If you see a `NameError`, it usually means an earlier cell has not been run yet. Use **Run All** to avoid this.
+
+---
+
+### Step 6 — Save your work to GitHub
+
+Push your changes to GitHub periodically as you work through the notebook — this keeps your code backed up and lets you pick up where you left off from any computer.
+
+1. Open the Source Control panel in VS Code: click the branch icon on the left sidebar or press `Cmd+Shift+G` (Mac) / `Ctrl+Shift+G` (Windows)
+2. You will see your modified notebook listed under **Changes**
+3. Click the `+` icon next to the file to stage it
+4. Type a short message describing what you did (e.g. `completed tidal spectrum section`) and click **Commit**
+5. Click **Sync Changes** to push to your GitHub repo
+
+You can push as many times as you like — each push saves a snapshot of your progress.
+
+> **Note:** Lab reports are submitted through Canvas, not GitHub.
